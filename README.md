@@ -3,6 +3,10 @@ Official implementation of our interpretable, data-driven, hierarchical multi-do
 
 Chronic ankle instability (CAI) is a common sports-related musculoskeletal disorder, characterized by recurrent sprains and neuromuscular control deficits. This study proposes an AI-enabled digital twin framework for sports health applications, offering both interpretability and clinical deployability. The framework identifies CAI using wearable sensor data-driven hierarchical multi-domain fusion models, generates fine-grained motor function scores through probabilistic modeling, and leverages SHAP-based interpretability to reveal key risk factors. This enables a transparent, closed-loop, and individualized rehabilitation strategy. Validation on 100 participants, including CAI patients and healthy controls, demonstrated robust classification performance (accuracy = 98.50%, AUC = 0.99) and strong concordance between generated scores and clinical gold standards (r = -0.908, p < 0.001). This non-invasive, personalized assessment tool supports long-term rehabilitation management of chronic conditions, providing an innovative and cost-effective digital health solution for sports medicine.
 
+## Overview
+
+![github图片](https://github.com/user-attachments/assets/2a06e0b6-da58-441a-992c-5bf0ca0e4656)
+
 ## Files
 
 - `integrated_spatial_classifier_pipeline.py`: Spatial domain classifier pipeline.
