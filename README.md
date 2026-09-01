@@ -26,3 +26,27 @@ Once your features are extracted and saved, install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+
+Run the core script by specifying the path to your extracted feature directory (default is `./features`):
+
+```bash
+python CAI_func_score_net.py --data_dir /path/to/your/extracted_features
+```
+
+The script will automatically perform the subject-wise 4:3:3 cascaded training, generate predictive probabilities, and output the clinically stratified continuous motor function scores.
+
+## Citation
+
+If you find this repository useful for your research, please cite our paper:
+
+```bibtex
+@article{jie2026interpretable,
+  title={An Interpretable, Data-Driven, Hierarchical Multi-Domain Fusion Framework for Classification and Motor Function Scoring in Chronic Ankle Instability},
+  author={Jie, Tianle and Xu, Datao and Zhou, Zhifeng and Van Hooren, Bas and Zhou, Huiyu and Yuan, Yi and Gao, Xiangli and Jemni, Mon{\`e}m and Xiang, Liangliang and Wang, Meizi and Fernandez, Justin and Goda, Tibor J. and Gu, Yaodong},
+  journal={Advanced Science},
+  pages={e77212},
+  year={2026},
+  publisher={Wiley Online Library},
+  doi={10.1002/advs.77212}
+}
+```
