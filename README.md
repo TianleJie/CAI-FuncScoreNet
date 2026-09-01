@@ -17,15 +17,17 @@ This repository provides the modular, object-oriented Python pipeline for traini
 
 ### 1. Data Preparation
 The raw sEMG data required for this study is hosted externally. To run the classification pipeline, users must complete the feature extraction process:
-*   Download the raw sEMG dataset (Excel format containing CAI and Healthy cohorts) from our Figshare repository (Link available in the published paper).
-*   Implement the signal processing (filtering, muscle activation modeling) and Non-negative Matrix Factorization (NNMF) algorithms precisely as detailed in **Section 5 (Methods)** of our paper to extract the spatial, temporal, similarity, and complexity features.
-*   Save the extracted features into corresponding CSV files (e.g., `spatial_features.csv`, `temporal_features.csv`) in a designated local directory.
+* Download the raw sEMG dataset (Excel format containing CAI and Healthy cohorts) from our Figshare repository (Link available in the published paper).
+* Implement the signal processing (filtering, muscle activation modeling) and Non-negative Matrix Factorization (NNMF) algorithms precisely as detailed in **Section 5 (Methods)** of our paper to extract the spatial, temporal, similarity, and complexity features.
+* Save the extracted features into corresponding CSV files (e.g., `spatial_features.csv`, `temporal_features.csv`) in a designated local directory.
 
 ### 2. Running the Model
+
 Once your features are extracted and saved, install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
 Run the core script by specifying the path to your extracted feature directory (default is `./features`):
 
